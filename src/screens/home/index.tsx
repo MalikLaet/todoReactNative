@@ -5,8 +5,7 @@ import {styles} from "./styles"
 export default function Home() {
   return (
     <View style={styles.container}>
-      <Text>Ola mundo</Text>
-      <StatusBar style="auto" />
+      <Text style={styles.titulo}>StudyPlanner</Text>
       
     </View>
   );
