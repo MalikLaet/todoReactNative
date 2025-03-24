@@ -15,6 +15,9 @@ export const styles = StyleSheet.create({
         fontSize: 14,
         marginTop: 7,
         color:"#DC1637"
-    }
+    },
+    inputText: {
+        color: "#fff",
+      }
   });
   

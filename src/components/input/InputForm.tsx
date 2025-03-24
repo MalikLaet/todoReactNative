@@ -30,6 +30,8 @@ const InputForm = forwardRef<TextInput, Props>(({icon, fromProps, inputProps, er
                    />
                 
                 <TextInput 
+                aria-label='email'
+                style={styles.inputText}
                 ref={ref}
                 value={field.value}
                 onChangeText={field.onChange}
