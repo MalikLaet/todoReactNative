@@ -6,8 +6,9 @@ import { useForm } from 'react-hook-form';
 import { ButtonText } from '../../components/button/ButtonText';
 
 export default function Cadastro()  {
-  const { control, handleSubmit } = useForm();
+  const { control, handleSubmit, formState: {errors} } = useForm();
 
+  console.log(errors)
   function handleNextStep(data: any){
     console.log(data);
   }
@@ -36,9 +37,13 @@ export default function Cadastro()  {
     <InputForm 
       ref={emailRef}
       icon='user'
+      error={errors.name?.message}      
       fromProps={{
+        control,
         name: 'name',
-        control
+        rules: {
+          required: "Nome é obrigatório",
+        }
       }}
       inputProps={{
         placeholder: "Digite seu usuário",

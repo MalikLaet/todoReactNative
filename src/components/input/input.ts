@@ -11,6 +11,10 @@ export const styles = StyleSheet.create({
         borderBottomWidth: 1,
         borderBottomColor: "#71717B",
     },
-
+    erro: {
+        fontSize: 14,
+        marginTop: 7,
+        color:"#DC1637"
+    }
   });
   
