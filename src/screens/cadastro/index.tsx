@@ -22,13 +22,21 @@ export default function Cadastro()  {
 
     <InputForm 
       icon='mail'
+      error={errors.email?.message}
       fromProps={{
+        control,
         name: 'email',
-        control
+        rules: {
+          required: "E-mail é obrigatório",
+          pattern: {
+            value: /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+$/i,
+            message: "E-mail inválido"
+          }
+        }
       }}
       inputProps={
         {
-          placeholder: "Digite seu email",
+          placeholder: "Digite seu E-mail",
           placeholderTextColor: "#71717B",
           onSubmitEditing: () => emailRef.current?.focus(),
           returnKeyType: 'next'

@@ -23,7 +23,7 @@ const InputForm = forwardRef<TextInput, Props>(({icon, fromProps, inputProps, er
                     size={20}
                     color={clsx({
                         ["#DC1637"]: error.length > 0,
-                        ["#C10C99"]: field.value,
+                        ["#C10C99"]: (field.value && error.length === 0),
                         ["#FFF"]: (error.length === 0 && !field.value)
                     })}
 
