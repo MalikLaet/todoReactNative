@@ -6,8 +6,6 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { useNavigation } from '@react-navigation/native';
 
 
-
-
 export  function Home() {
   const { navigate } = useNavigation(); 
 

@@ -4,6 +4,7 @@ import { Home } from '../screens/home'
 import Cadastro  from '../screens/cadastro'
 import Login  from '../screens/login'
 import { createStackNavigator } from '@react-navigation/stack'
+import Inicial from '../screens/inicial'
 
 const { Navigator, Screen} = createNativeStackNavigator()
 
@@ -13,6 +14,7 @@ export  function AccountRoutes() {
       <Screen name='Home' component={Home}/>
       <Screen name='Cadastro' component={Cadastro}/>
       <Screen name='Login' component={Login}/>
+      <Screen name='Inicial' component={Inicial}/>
 
     </Navigator>
   )
