@@ -4,8 +4,10 @@ import { styles } from "./styles";
 import { InputForm } from "../../components/input/InputForm";
 import { useForm } from "react-hook-form";
 import { ButtonText } from "../../components/button/ButtonText";
+import { useNavigation } from "@react-navigation/native";
 
 export default function Cadastro() {
+  const {navigate } = useNavigation()
   const {
     control,
     handleSubmit,
@@ -20,7 +22,7 @@ function validationPasswordConfirmation(passwordConfirmation: String){
 }
 
   function handleNextStep(data: any) {
-    console.log(data);
+    navigate("Login");
   }
 
   const emailRef = useRef<TextInput>(null);

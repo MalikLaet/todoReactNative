@@ -6,7 +6,7 @@ import { Controller, UseControllerProps } from 'react-hook-form';
 import clsx from 'clsx';
 
 type Props = {
-    error: string,
+    error?: string,
     icon: keyof typeof Feather.glyphMap;
     fromProps: UseControllerProps;
     inputProps: TextInputProps;
