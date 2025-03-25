@@ -48,4 +48,68 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
+  modalContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+  },
+  modalContent: {
+    alignItems: "center",
+    gap: 8,
+    width: "80%",
+    backgroundColor: "#27272A",
+    padding: 20,
+    borderWidth: 1,
+    borderRadius: 10,
+    borderColor: "#333333"
+  },
+  modalTitle: {
+    fontSize: 18,
+    fontWeight: "bold",
+    marginBottom: 10,
+    color: "#71717B"
+  },
+  input: {
+    width: "100%",
+    height: 40,
+    borderWidth: 1,
+    borderColor: "#ccc",
+    borderRadius: 5,
+    paddingHorizontal: 10,
+    marginBottom: 10,
+  },
+  botaoAdicionar: {
+    backgroundColor: "#007AFF",
+    padding: 10,
+    borderRadius: 5,
+    width: "100%",
+    alignItems: "center",
+    marginBottom: 5,
+  },
+  botaoCancelar: {
+    backgroundColor: "#ff3b30",
+    padding: 10,
+    borderRadius: 5,
+    width: "100%",
+    alignItems: "center",
+  },
+  textoBotao: {
+    color: "white",
+    fontWeight: "bold",
+  },
+  taskItem: {
+    width: 280,
+    backgroundColor: "#262626",
+    padding: 15,
+    marginTop: 20,
+    marginBottom: 10,
+    borderWidth: 1,
+    borderRadius: 10,
+    borderColor: "#333333"
+  },
+  taskText: {
+    fontSize: 16,
+    color: "#ffff"
+  },
 });
