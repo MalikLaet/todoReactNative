@@ -8,15 +8,15 @@ export const styles = StyleSheet.create({
     alignItems: "center",
   },
   titulo: {
-    fontSize: 36,
+    fontSize: 40,
     color: "#FFFFFF",
     paddingBottom: 24,
   },
   subTitulo:{
-    fontSize: 24,
+    fontSize: 28,
     color: "#71717B",
-    paddingRight: 180,
-    paddingTop: 40
+    paddingTop: 40,
+    paddingRight: 280,
 },
   container2:{
     flexDirection: "row",
@@ -129,9 +129,10 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     gap: 20,
-    width: 280,
+    width: 340,
     backgroundColor: "#262626",
     padding: 15,
+
     marginTop: 20,
     marginBottom: 10,
     borderWidth: 1,
