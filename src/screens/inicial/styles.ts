@@ -37,6 +37,27 @@ export const styles = StyleSheet.create({
      fontSize: 18,
     fontWeight: "bold"
   },
+  button:{
+    alignItems: "center",
+    justifyContent: "center",
+
+    borderRadius: 30,
+    backgroundColor: "#333333", 
+
+    width: 24,
+    height: 24,
+  },
+  criadas:{
+    color: "#FFF",
+    fontSize: 14,
+  },
+  taskDone: {
+    textDecorationLine: "line-through",
+    
+    color: "gray",
+  },
+
+  
   botaoFlutuante: {
     position: "absolute",
     top: 640,
@@ -48,6 +69,7 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
+
   modalContainer: {
     flex: 1,
     justifyContent: "center",
@@ -74,11 +96,13 @@ export const styles = StyleSheet.create({
     width: "100%",
     height: 40,
     borderWidth: 1,
-    borderColor: "#ccc",
+    borderColor: "#333333",
     borderRadius: 5,
     paddingHorizontal: 10,
     marginBottom: 10,
+    color: "#ffff"
   },
+
   botaoAdicionar: {
     backgroundColor: "#007AFF",
     padding: 10,
@@ -94,11 +118,17 @@ export const styles = StyleSheet.create({
     width: "100%",
     alignItems: "center",
   },
+
   textoBotao: {
     color: "white",
     fontWeight: "bold",
   },
+
+
   taskItem: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 20,
     width: 280,
     backgroundColor: "#262626",
     padding: 15,
@@ -108,8 +138,10 @@ export const styles = StyleSheet.create({
     borderRadius: 10,
     borderColor: "#333333"
   },
+
   taskText: {
     fontSize: 16,
-    color: "#ffff"
+    color: "#ffff",
+    paddingRight: 60,
   },
 });
