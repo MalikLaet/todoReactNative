@@ -37,9 +37,9 @@ export default function Inicial() {
       )
     );
   };
-  const removeCompletedTasks = () => {
-  setTasks((prevTasks) => prevTasks.filter((task) => !task.completed));
-};
+  const removeTask = (id: number) => {
+    setTasks((prevTasks) => prevTasks.filter((task) => task.id !== id));
+  };
   
   return (
     <View style={styles.container}>
@@ -76,15 +76,15 @@ export default function Inicial() {
             <Text style={[styles.taskText, item.completed && styles.taskDone]}>
               {item.title}
             </Text>
+            <TouchableOpacity
+        onPress={() => removeTask(item.id)}
+        style={styles.deleteButton}
+      >
+        <AntDesign name="delete" size={24} color="red" />
+      </TouchableOpacity>
           </View>
         )}
 />
-      {tasks.some((task) => task.completed) && (
-        <TouchableOpacity style={styles.botaoExcluir} onPress={removeCompletedTasks}>
-          <Text style={styles.textoBotao}>Excluir Concluídas</Text>
-        </TouchableOpacity>
-      )}
-      
       <Modal visible={modalVisible} animationType="slide" transparent={true}>
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>

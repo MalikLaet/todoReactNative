@@ -111,20 +111,16 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     marginBottom: 5,
   },
+  deleteButton: {
+    marginLeft: 85, 
+    padding: 5,
+  },
   botaoCancelar: {
     backgroundColor: "#ff3b30",
     padding: 10,
     borderRadius: 5,
     width: "100%",
     alignItems: "center",
-  },
-  botaoExcluir: {
-    backgroundColor: "#FF3B30",
-    padding: 12,
-    borderRadius: 8,
-    alignItems: "center",
-    justifyContent: "center",
-    marginTop: 10,
   },
   
   textoBotao: {
