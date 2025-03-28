@@ -37,7 +37,10 @@ export default function Inicial() {
       )
     );
   };
-
+  const removeCompletedTasks = () => {
+  setTasks((prevTasks) => prevTasks.filter((task) => !task.completed));
+};
+  
   return (
     <View style={styles.container}>
       <Text style={styles.titulo}>Meu Cronograma</Text>
@@ -75,7 +78,13 @@ export default function Inicial() {
             </Text>
           </View>
         )}
-      />
+/>
+      {tasks.some((task) => task.completed) && (
+        <TouchableOpacity style={styles.botaoExcluir} onPress={removeCompletedTasks}>
+          <Text style={styles.textoBotao}>Excluir Concluídas</Text>
+        </TouchableOpacity>
+      )}
+      
       <Modal visible={modalVisible} animationType="slide" transparent={true}>
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
@@ -110,3 +119,4 @@ export default function Inicial() {
     </View>
   );
 }
+

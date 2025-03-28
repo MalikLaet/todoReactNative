@@ -118,7 +118,15 @@ export const styles = StyleSheet.create({
     width: "100%",
     alignItems: "center",
   },
-
+  botaoExcluir: {
+    backgroundColor: "#FF3B30",
+    padding: 12,
+    borderRadius: 8,
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 10,
+  },
+  
   textoBotao: {
     color: "white",
     fontWeight: "bold",
