@@ -114,6 +114,7 @@ export const styles = StyleSheet.create({
   deleteButton: {
     marginLeft: 85, 
     padding: 5,
+    justifyContent:"space-between"
   },
   botaoCancelar: {
     backgroundColor: "#ff3b30",
@@ -136,6 +137,7 @@ export const styles = StyleSheet.create({
     width: 340,
     backgroundColor: "#262626",
     padding: 15,
+    justifyContent:"space-between",
 
     marginTop: 20,
     marginBottom: 10,
@@ -147,6 +149,9 @@ export const styles = StyleSheet.create({
   taskText: {
     fontSize: 16,
     color: "#ffff",
-    paddingRight: 60,
+    paddingRight: 50,
+    flex: 1,
+    flexShrink:1,
+    maxWidth:"100%",
   },
 });

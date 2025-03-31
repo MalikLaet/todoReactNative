@@ -76,8 +76,7 @@ export default function Inicial() {
             <Text style={[styles.taskText, item.completed && styles.taskDone]}>
               {item.title}
             </Text>
-            <TouchableOpacity
-        onPress={() => removeTask(item.id)}
+            <TouchableOpacity onPress={() => removeTask(item.id)}
         style={styles.deleteButton}
       >
         <AntDesign name="delete" size={24} color="red" />
